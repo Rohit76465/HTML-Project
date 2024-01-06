@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form part of the project</title>
+</head>
+
+<body>
+    <h1>Enter your details here</h1>
+    <form>
+
+        <!-- Input will happen even when you click the Name label because label and input are binded together with an id-->
+
+        <!-- value can be used to give a default value-->
+
+        <label for="b">Name:</label>
+        <input id="b" type="text" value="Enter Here"><br><br>
+
+        <!-- We can make any field as required. Browser will ask ,"please fill out this field".-->
+
+        <!-- It does not work for checkboxes and radios. -->
+
+        <!-- Suppose we want to make age field required -->
+
+        <label>Age: </label>
+        <input type="number" required><br><br>
+
+        <!-- type="email", browser searches for @ and . -->
+
+        <label>Email:</label>
+        <input type="email"><br><br>
+
+    
+
+        <label>Password:</label>
+        <input type="password" name=""><br><br>
+
+        <label>Date of Birth</label>
+        <input type="date" name=""><br><br>
+
+        <!-- For Multiple Choice , we use radio button -->
+
+        <label>Year: </label><br>
+        <input type="radio" name="">First<br>
+        <input type="radio" name="">Second<br>
+        <input type="radio" name="">Third<br>
+        <input type="radio" name="">Fourth<br><br>
+
+        <!-- For Single Choice , we use radio button only,But in a different way-->
+
+        <!-- In name="" you have to do 2 things. i,e give some name and the it should be same for all other options too-->
+
+        <!-- You can give any name -->
+
+        <label>Year</label><br>
+        <input type="radio" name="roh">First<br>
+        <input type="radio" name="roh">Second<br>
+        <input type="radio" name="roh">Third<br>
+        <input type="radio" name="roh">Fourth<br><br>
+
+        <!-- To solve all these complexity we use checkbox button as type="checkbox" and no matter whether you write name="" or name="x" and name="x" or any other things.You can always check,uncheck,Select only One,Select more than One or Select All the Options.-->
+
+        <label>Preffered City</label><br>
+        <input type="checkbox" name="">Delhi<br>
+        <input type="checkbox" name="x">Mumbai<br>
+        <input type="checkbox" name="">Kolkata<br>
+        <input type="checkbox" name="x">Goa<br>
+        <input type="checkbox" name="y">Tata<br>
+        <input type="checkbox" name="y">Bangalore<br><br>
+
+        <label>Hobby</label><br>
+        <input type="checkbox" name="">Gaming<br>
+        <input type="checkbox" name="">Sports<br>
+        <input type="checkbox" name="">Singing<br>
+        <input type="checkbox" name="">Painting<br><br>
+
+        <!-- Uploading any type of file such as image,Video,pdf etc. Let us take a Profile Picture-->
+
+        <label>Upload Document:</label>
+        <input type="file"><br> <br>
+
+
+        <p>Tshirt Size: </p>
+
+        <input name="x" type="radio">
+        <label>small</label><br>
+
+        <!-- By clicking on "medium" too , input will happen.-->
+
+        <input id="a" name="x" type="radio">
+        <label for="a">medium</label><br>
+        
+        <input name="x" type="radio">
+        <label>large</label><br><br>
+        
+        <!--To Select a colour data-->
+
+        <label>Colour: </label>
+        <input type="color">
+
+        <br><br>
+
+        <label for="d">Choose a car: </label>
+        <select id="d">
+            <option>Volvo</option>
+            <option>Tata</option>
+            <option>MG</option>
+            <option>Kia</option>
+            <option>Bolero</option>
+        </select>
+
+        <br><br>
+
+        <!-- 1st way to add text area-->
+        <label>About me:</label>
+        <textarea>Hi! Please Start Writing</textarea><br><br>
+
+        <!-- 2nd way to add text area-->
+        <label>Tell about yourself: </label>
+        <textarea cols="40" rows="5"></textarea>
+
+        <br><br>
+
+        <!--To reset the form data-->
+
+        <input type="reset"> <br><br>
+
+        <input type="submit"> <br><br>
+
+        <!-- You can change the text "submit" to any other word using value -->
+        <input type="submit" value="Register"> <br><br>
+
+        <!-- Submit button with a popup message.-->
+        <button onclick="alert('Click Ok to Submit Data')">Submit</button> <br><br>
+
+        <!-- Youtube video link-->
+        <iframe width="600" height="300" src="https://www.youtube.com/embed/R45lK9O7-0w"
+            title="Jana Gana Mana - National Anthem (HD VIDEO) - Best Indian Patriotic Song - Ravi Raj -  Arya Nandini"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+    </form>
+</body>
+
+</html>
